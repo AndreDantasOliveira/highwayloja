@@ -25,7 +25,7 @@
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
 
 </head>
 <body>
@@ -34,11 +34,13 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
         <div class="row">
-            <a class="brand" href="#"></a>
+            <img src = "images/logo.png" class="logo">
+            <a class="brand" href=""></a>
             <a class="button button-primary u-pull-right simpleStore_viewCart">
                 <i class="fa fa-shopping-cart"></i> = <span class="simpleCart_total"></span>
             </a>
         </div>
+        
         <div class="simpleStore_container"></div>
         <div class="simpleStore_cart_container"></div>
     </div>
@@ -80,7 +82,7 @@
                     <span class="item_price"></span>
 
                     <div class="qty">
-                        <label>QTY</label>
+                        <label>QTD</label>
                         <input type="number" value="1" min="1" step="1" class="item_Quantity">
                     </div>
                     <div class="simpleStore_options"></div>
@@ -93,24 +95,24 @@
     <!-- Cart View -->
     <script id="cart-template" type="x-template">
         <div class="simpleStore_cart">
-            <h2>Carrinho</h2>
+            <h3>Itens</h3>
             <a href="#" class="close">&times;</a>
 
             <div class="row">
                 <div class="eight columns">
                     <div class="simpleCart_items"></div>
-                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Empty Cart <i class="fa fa-trash-o"></i></a>
+                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Limpar  <i class="fa fa-trash-o"></i></a>
                 </div>
                 <div class="four columns">
                     <div class="cart_info">
-                        <div class="cart_info_item cart_itemcount">Items:
+                        <div class="cart_info_item cart_itemcount">Itens:
                             <div class="simpleCart_quantity"></div>
                         </div>
                         
                         <div class="cart_info_item cart_total"><b>Total:
                             <div class="simpleCart_grandTotal"></div>
                         </b></div>
-                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Finalizar <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
